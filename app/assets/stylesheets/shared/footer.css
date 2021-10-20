@@ -1,0 +1,17 @@
+.footer-maim {
+  background-color: #AFEEEE;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: right;
+}
+
+.product-sign {
+  margin-left: 30px;
+  
+}
+.prodacter-name {
+  text-decoration: none;
+  color: #333333;
+}

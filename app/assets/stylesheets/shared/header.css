@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100vw;
+  padding: 5px 30px;
+  background-color: #AFEEEE;
+}
+
+.nav {
+  font-size: 20px;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.login {
+  text-decoration: none;
+  line-height: 30px;
+  margin-right: 2vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+  margin-right: 2vw;
+}
+
+.app-title {
+  font-size: 50px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.app-about {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333333;
+}
