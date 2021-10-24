@@ -3,12 +3,24 @@
 
 <div class='main-contents' >
   <div class='right-message'>
-    <div class='app-comment'>
-     <h1 class='welcome-message'>ようこそ当アプリへ！！</h1>
-     <p class='this-app'>このアプリはあなたの車の点検時期を</p>
-     <p class='this-app-p'>お知らせするアプリです</p>
-     <p class='new-user-message'>まずは新規登録から始めましょう</p>
-    </div>
+    <% if user_signed_in? %>
+      <%# ユーザーがログインしている場合は下記を表示する%>
+      <div class='user-message'>
+        <p class='welcome-user-message'><%="お帰りなさい！#{current_user.nickname}さん！"%></p>
+        <p class='user-car'>あなたの（車名）の次回点検日は（年月日）です</p>
+        <p class='good-day-massage'>今日も安全運転で参りましょう！</p>
+      </div>
+      <%# ユーザーがログインしている場合は上記を表示する%>
+    <% else %>
+      <%# ユーザーがログインしていない場合は下記を表示%>
+      <div class='app-comment'>
+        <h1 class='welcome-message'>ようこそ当アプリへ！！</h1>
+        <p>このアプリはあなたの車の点検時期を</p>
+        <p>お知らせするアプリです</p>
+        <p class='new-user-message'>まずは新規登録から始めましょう</p>
+      </div>
+      <%# ユーザーがログインしていない場合は上記を表示%>
+    <% end %>
   </div>
 </div>
 
