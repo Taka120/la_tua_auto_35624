@@ -4,12 +4,15 @@
  <div class='form-wrap'>
    <div class='form-header'>
      <h1 class='form-header-text'>
-       会員情報入力
+       新規会員登録
      </h1>
    </div>
 
+   <%# /会員情報 %>
+   <div class='form-title'>
+    <p>ー  会員情報  ー</p>
+   </div>
   
-
    <div class="form-group">
      <div class='form-text-wrap'>
        <label class="form-text">ニックネーム</label>
@@ -46,36 +49,85 @@
        <span class="indispensable">必須</span>
      </div>
      <div class='input-name-wrap'>
-       <%= f.text_area :last_name, class:"input-name", id:"last-name", placeholder:"例) 山田" %>
-       <%= f.text_area :first_name, class:"input-name", id:"first-name", placeholder:"例) 陸太郎" %>
+       <%= f.text_area :last_name, class:"input-default", id:"last-name", placeholder:"例) 山田" %>
+       <%= f.text_area :first_name, class:"input-default", id:"first-name", placeholder:"例) 太郎" %>
      </div>
    </div>
    <div class="form-group">
      <div class='form-text-wrap'>
        <label class="form-text">郵便番号</label>
-       <span class="indispensable">必須</span>
      </div>
      <%= f.text_area :postal_number, class:"input-default", id:"postal_number", placeholder:"例) 123-4567" %>
    </div>
    <div class="form-group">
      <div class='form-text-wrap'>
        <label class="form-text">住所</label>
-       <span class="indispensable">必須</span>
      </div>
      <%= f.text_area :address, class:"input-default", id:"address", placeholder:"例) 東京都品川区1-1-1" %>
    </div>
    <div class="form-group">
      <div class='form-text-wrap'>
        <label class="form-text">電話番号</label>
+     </div>
+     <%= f.text_area :telephone_number, class:"input-default", id:"telephone-number", placeholder:"例) 0123-1234-5678" %>
+   </div>
+   <%# //会員情報 %>
+
+   <%# 自家用車情報 %>
+   <div class='form-title'>
+     <p>ー  自家用車情報  ー</p>
+   </div>
+  
+   <div class="form-group">
+     <div class='form-text-wrap'>
+       <label class="form-text">メーカー名</label>
        <span class="indispensable">必須</span>
      </div>
-     <%= f.text_area :telephone_number, class:"input-default", id:"telephone-number", placeholder:"例) 123-1234-5678" %>
+     <%= f.text_area :car_brand, class:"input-default", id:"car-brand", placeholder:"例) フィアット" %>
    </div>
+
+   <div class="form-group">
+     <div class='form-text-wrap'>
+       <label class="form-text">車種名</label>
+       <span class="indispensable">必須</span>
+     </div>
+     <%= f.text_area :car_name, class:"input-default", id:"car-name", placeholder:"例) 500" %>
+   </div>
+
+   <div class="form-group">
+     <div class='form-text-wrap'>
+       <label class="form-text">点検時期</label>
+       <span class="indispensable">必須</span>
+     </div>
+     <%= f.text_area :inspection_date, class:"input-default", id:"inspection-date", placeholder:"例) 21/3/20" %>
+   </div>
+
+   <div class="form-group">
+     <div class='form-text-wrap'>
+       <label class="form-text">車の色</label>
+     </div>
+     <%= f.text_area :car_color, class:"input-default", id:"car-color", placeholder:"例) 青" %>
+   </div>
+
+   <div class="form-group">
+     <div class='form-text-wrap'>
+       <label class="form-text">車の愛称</label>
+     </div>
+     <%= f.text_area :car_nickname, class:"input-default", id:"car-nickname", placeholder:"例) Sig.チンクエチェント" %>
+   </div>
+
+   <div class="form-group">
+     <div class='form-text-wrap'>
+       <label class="form-text">車の状態</label>
+     </div>
+     <%= f.text_area :car_condition, class:"car-condition", id:"car-condition", placeholder:"例) 前バンパー左側に線傷あり,その他良好" %>
+   </div>
+   <%# //自家用車情報 %>
+
    <div class='register-btn'>
      <%= f.submit "会員登録" ,class:"register-red-btn" %>
    </div>
  </div>
 <% end %>
-
 
 <%= render "shared/footer" %>
