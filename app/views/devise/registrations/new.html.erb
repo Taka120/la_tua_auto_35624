@@ -99,7 +99,8 @@
        <label class="form-text">点検時期</label>
        <span class="indispensable">必須</span>
      </div>
-     <%= f.text_area :inspection_date, class:"input-default", id:"inspection-date", placeholder:"例) 21/3/20" %>
+     <%= f.date_field :inspection_date, class:"input-default", id:"inspection-date" %>
+     <p class='info-text'>※右のマークをクリックして日付を選んでください</p>
    </div>
 
    <div class="form-group">
