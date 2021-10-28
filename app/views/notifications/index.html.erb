@@ -7,7 +7,7 @@
       <%# ユーザーがログインしている場合は下記を表示する%>
       <div class='user-message'>
         <p class='welcome-user-message'><%="お帰りなさい！#{current_user.nickname}さん！"%></p>
-        <p class='user-car'>あなたの（車名）の次回点検日は（年月日）です</p>
+        <p class='user-car'><%= "あなたの#{current_user.car_name}の次回点検日は#{current_user.inspection_date}です!!" %></p>
         <p class='good-day-massage'>今日も安全運転で参りましょう！</p>
       </div>
       <%# ユーザーがログインしている場合は上記を表示する%>
