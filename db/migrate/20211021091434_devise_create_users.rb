@@ -12,6 +12,12 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :postal_number
       t.string :address
       t.string :telephone_number
+      t.string :car_brand,          null: false
+      t.string :car_name,           null: false
+      t.date :inspection_date,      null: false
+      t.string :car_color
+      t.string :car_nickname
+      t.text :car_condition
 
 
       ## Recoverable

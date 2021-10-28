@@ -21,6 +21,12 @@ ActiveRecord::Schema.define(version: 2021_10_21_091434) do
     t.string "postal_number"
     t.string "address"
     t.string "telephone_number"
+    t.string "car_brand", null: false
+    t.string "car_name", null: false
+    t.date "inspection_date", null: false
+    t.string "car_color"
+    t.string "car_nickname"
+    t.text "car_condition"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

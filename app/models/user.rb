@@ -7,4 +7,7 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :password, format:{with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i}
+  validates :car_brand, presence: true
+  validates :car_name, presence: true
+  validates :inspection_date, presence: true
 end
