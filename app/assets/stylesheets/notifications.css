@@ -1,6 +1,6 @@
 .main-contents {
   width: 100vw;
-  background-image: url('road-20_L_T.png');
+  background-image: url('main-image.png');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -18,13 +18,12 @@
   margin-top: 30px;
 }
 
-.app-comment {
+.app-comment, .user-message {
   text-align: center;
   margin-top: 20px;
-  
 }
 
-.welcome-message {
+.welcome-message, .welcome-user-message {
   margin-bottom: 10px;
 }
 

@@ -36,6 +36,13 @@
   margin-right: 2vw;
 }
 
+.logout {
+  text-decoration: none;
+  color: #333333;
+  margin-right: 2vw;
+  margin-left: 20px;
+}
+
 .app-title {
   font-size: 50px;
   text-decoration: none;
